@@ -8,7 +8,7 @@ subtitle: >
   href='https://economic-ai.com/'>Economic AI GmbH</a>
 profile:
   align: right
-  image: prof_pic.jpg
+  image: VF.jpg
   image_circular: false
   more_info: |
     <p>valerian.fourel@gmail.com</p>  <p>Hamburg, Germany</p> 
