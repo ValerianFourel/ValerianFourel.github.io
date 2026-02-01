@@ -23,10 +23,6 @@ announcements:
   scrollable: true
   limit: 5
 
-latest_posts:
-  enabled: true
-  scrollable: true
-  limit: 3
 ---
 
 [cite_start]I am a **Machine Learning Engineer** specializing in **Causal AI** and **Large Language Models (LLMs)** applied to complex real-world systems[cite: 4]. [cite_start]Currently, I serve as an **ML Research Associate** at the **University of Hamburg** [cite: 19] [cite_start]and a **Software Engineer** at **Economic AI GmbH**[cite: 24]. [cite_start]My work focuses on modeling text data mixtures as causal treatment effects [cite: 20] [cite_start]and optimizing training corpora for production-grade LLMs[cite: 21].
