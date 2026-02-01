@@ -309,7 +309,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/assets/pdf/example_pdf.pdf";
+            window.location.href = "/assets/pdf/ValerianFourelResume_Feb1st2026.pdf";
           
         },
       },{id: "post-a-post-with-diagrams",
