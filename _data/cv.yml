@@ -4,7 +4,8 @@ cv:
   email: valerian.fourel@gmail.com
   location: Hamburg, Germany
   image: ""
-  summary: ML Engineer specializing in Causal AI and LLMs applied to complex real-world systems, from remote sensing to 3D vision modeling. [cite_start]I combine diverse technical expertise with cross-cultural communication skills to deliver scalable, global solutions. [cite: 3, 4, 5, 6]
+  # Added quotes here because of brackets and colons
+  summary: "ML Engineer specializing in Causal AI and LLMs applied to complex real-world systems, from remote sensing to 3D vision modeling. I combine diverse technical expertise with cross-cultural communication skills to deliver scalable, global solutions."
 
   social_networks:
     - network: GitHub
@@ -23,76 +24,76 @@ cv:
   sections:
     Education:
       - institution: Eberhard Karls University Tübingen
-        [cite_start]location: Tübingen, Germany [cite: 11]
-        [cite_start]area: Quantitative Data Science - Machine Learning Specialization [cite: 9]
-        [cite_start]studyType: MSc. [cite: 9]
-        [cite_start]courses: "Deep Learning, Causal Machine Learning, Time Series Analysis, Psychometrics" [cite: 10]
+        location: "Tübingen, Germany"
+        area: "Quantitative Data Science - Machine Learning Specialization"
+        studyType: "MSc."
+        courses: "Deep Learning, Causal Machine Learning, Time Series Analysis, Psychometrics"
 
       - institution: McGill University
-        [cite_start]location: Montreal, Canada [cite: 13]
-        [cite_start]area: Computer Science and Economics [cite: 14]
-        [cite_start]studyType: BA. [cite: 14]
-        [cite_start]courses: "Data Structures & Algorithms, Intelligent Robotics, Databases, Industrial Organizations" [cite: 15]
+        location: "Montreal, Canada"
+        area: "Computer Science and Economics"
+        studyType: "BA."
+        courses: "Data Structures & Algorithms, Intelligent Robotics, Databases, Industrial Organizations"
 
     Experience:
       - company: University of Hamburg
-        [cite_start]position: Machine Learning Research Associate [cite: 19]
-        [cite_start]location: Hamburg, Germany [cite: 17]
+        position: "Machine Learning Research Associate"
+        location: "Hamburg, Germany"
         start_date: 2025-08-01
-        [cite_start]end_date: Present [cite: 17]
+        end_date: "Present"
         highlights:
-          - [cite_start]Modeled text data mixtures as causal treatment effects using PySpark to process 10,000+ documents, optimizing training corpora for distinct LLM architectures. [cite: 20]
-          - [cite_start]Executed experimental fine-tuning designs on 8+ SLM variants in PyTorch, validating architectural choices that improved reliability of 1.7B+ parameter models. [cite: 21]
-          - [cite_start]Synthesized complex Causal ML research into actionable documentation for lab stakeholders. [cite: 22]
+          - "Modeled text data mixtures as causal treatment effects using PySpark to process 10,000+ documents, optimizing training corpora for distinct LLM architectures."
+          - "Executed experimental fine-tuning designs on 8+ SLM variants in PyTorch, validating architectural choices that improved reliability of 1.7B+ parameter models."
+          - "Synthesized complex Causal ML research into actionable documentation for lab stakeholders."
 
       - company: Economic AI GmbH
-        [cite_start]position: Software Engineer (Contract) [cite: 24]
-        [cite_start]location: Hamburg, Germany [cite: 25]
+        position: "Software Engineer (Contract)"
+        location: "Hamburg, Germany"
         start_date: 2025-08-01
-        [cite_start]end_date: Present [cite: 25]
+        end_date: "Present"
         highlights:
-          - [cite_start]Implemented PySpark features on Databricks for a causal ML codebase, reducing runtime by 4x for 50K+ data pipelines. [cite: 26]
-          - [cite_start]Delivered 12+ presentations translating complex Causal ML concepts into accessible insights for business alignment. [cite: 27]
-          - [cite_start]Implemented 150+ rigorous unit tests and authored in-depth API guides to ensure production-grade reliability. [cite: 28]
+          - "Implemented PySpark features on Databricks for a causal ML codebase, reducing runtime by 4x for 50K+ data pipelines."
+          - "Delivered 12+ presentations translating complex Causal ML concepts into accessible insights for business alignment."
+          - "Implemented 150+ rigorous unit tests and authored in-depth API guides to ensure production-grade reliability."
 
       - company: Max Planck Institute for Intelligent Systems
-        [cite_start]position: Research Assistant [cite: 30]
-        [cite_start]location: Tübingen, Germany [cite: 31]
+        position: "Research Assistant"
+        location: "Tübingen, Germany"
         start_date: 2023-08-01
-        [cite_start]end_date: 2025-08-01 [cite: 31]
+        end_date: "2025-08-01"
         highlights:
-          - [cite_start]Engineered data processing and embedding workflows for textual/visual data across 50,000+ motion sequences using PyTorch. [cite: 32]
-          - [cite_start]Standardized Docker containers for ML model deployment, reducing deployment time by 90% and increasing scalability for 3D human modeling research. [cite: 33]
-          - [cite_start]Researched Few-Shot Learning on Visual LLMs for emotion detection, achieving a 20% increase in accuracy using 500K facial images. [cite: 34]
+          - "Engineered data processing and embedding workflows for textual/visual data across 50,000+ motion sequences using PyTorch."
+          - "Standardized Docker containers for ML model deployment, reducing deployment time by 90% and increasing scalability for 3D human modeling research."
+          - "Researched Few-Shot Learning on Visual LLMs for emotion detection, achieving a 20% increase in accuracy using 500K facial images."
 
       - company: Soil Science Lab - University of Tübingen
-        [cite_start]position: Data Science Intern [cite: 36]
-        [cite_start]location: Tübingen, Germany [cite: 37]
+        position: "Data Science Intern"
+        location: "Tübingen, Germany"
         start_date: 2023-01-01
-        [cite_start]end_date: 2023-08-01 [cite: 37]
+        end_date: "2023-08-01"
         highlights:
-          - [cite_start]Built PyTorch neural networks to predict soil metrics using time-series geospatial data, achieving RMSE below 0.05. [cite: 38]
-          - [cite_start]Engineered a Python ETL pipeline for a 10 million-point satellite dataset, applying Explainable AI for feature validation. [cite: 39]
-          - [cite_start]Designed regression-based experimental frameworks using SQL and Matplotlib/Seaborn to generate environmental insights. [cite: 40, 41]
+          - "Built PyTorch neural networks to predict soil metrics using time-series geospatial data, achieving RMSE below 0.05."
+          - "Engineered a Python ETL pipeline for a 10 million-point satellite dataset, applying Explainable AI for feature validation."
+          - "Designed regression-based experimental frameworks using SQL and Matplotlib/Seaborn to generate environmental insights."
 
     Skills:
       - name: Programming & Tools
         level: Expert
-        [cite_start]keywords: "Python, PyTorch, PySpark, SQL, Docker, CI/CD, Unit Testing, Azure, Databricks" [cite: 43]
+        keywords: "Python, PyTorch, PySpark, SQL, Docker, CI/CD, Unit Testing, Azure, Databricks"
       - name: Machine Learning
         level: Expert
-        [cite_start]keywords: "Causal Inference, LLMs, Visual Large Language Models, Few-Shot Learning, Time Series Analysis, Explainable AI" [cite: 4, 10, 34, 39]
+        keywords: "Causal Inference, LLMs, Visual Large Language Models, Few-Shot Learning, Time Series Analysis, Explainable AI"
 
     Languages:
       - name: French
-        [cite_start]summary: "C2 (Native/Bilingual)" [cite: 44]
+        summary: "C2 (Native/Bilingual)"
       - name: English
-        [cite_start]summary: "C2 (Native/Bilingual)" [cite: 44]
+        summary: "C2 (Native/Bilingual)"
       - name: German
-        [cite_start]summary: "B2 (Upper Intermediate)" [cite: 44]
+        summary: "B2 (Upper Intermediate)"
       - name: Korean
-        [cite_start]summary: "A2 (Elementary)" [cite: 44]
+        summary: "A2 (Elementary)"
 
     Interests:
       - name: Personal
-        [cite_start]keywords: "Music (1950s to 1980s), Strategic Board Games, Functional Training" [cite: 43]
+        keywords: "Music (1950s to 1980s), Strategic Board Games, Functional Training"
