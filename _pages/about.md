@@ -2,33 +2,35 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: >
+  ML Engineer | Causal AI & LLMs. 
+  <a href='https://www.uni-hamburg.de/'>University of Hamburg</a>[cite: 18, 19]. 
+  <a href='https://economic-ai.com/'>Economic AI GmbH</a>[cite: 23, 24].
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: false
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>valerian.fourel@gmail.com</p> [cite: 3]
+    <p>Hamburg, Germany</p> [cite: 17, 25]
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+selected_papers: true
+social: true
 
 announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  enabled: true
+  scrollable: true
+  limit: 5
 
 latest_posts:
   enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  scrollable: true
+  limit: 3
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+[cite_start]I am a **Machine Learning Engineer** specializing in **Causal AI** and **Large Language Models (LLMs)** applied to complex real-world systems[cite: 4]. [cite_start]Currently, I serve as an **ML Research Associate** at the **University of Hamburg** [cite: 19] [cite_start]and a **Software Engineer** at **Economic AI GmbH**[cite: 24]. [cite_start]My work focuses on modeling text data mixtures as causal treatment effects [cite: 20] [cite_start]and optimizing training corpora for production-grade LLMs[cite: 21].
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+[cite_start]I hold an **MSc. in Quantitative Data Science** with a specialization in Machine Learning from **Eberhard Karls University Tübingen** [cite: 8, 9] [cite_start]and a **BA in Computer Science and Economics** from **McGill University**[cite: 12, 14].
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+[cite_start]My technical journey includes roles at prestigious institutions like the **Max Planck Institute for Intelligent Systems** [cite: 29][cite_start], where I optimized emotion detection in faces using **Visual LLMs** [cite: 34][cite_start], and the **Soil Science Lab at Tübingen** [cite: 35][cite_start], where I built neural networks for sustainable agriculture using geospatial data[cite: 38]. [cite_start]I am passionate about building bridges across international teams to deliver scalable, global solutions[cite: 5, 6].
