@@ -1,81 +1,73 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
-importance: 2
+title: StableFace
+description: A Stable Diffusion Model for Faces with Guidance on Emotions
+img: assets/img/stableface_cover.jpg
+importance: 1
 category: work
-giscus_comments: true
+related_publications: false
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+I explored guidance mechanisms for Diffusion Models to achieve better performance in realism and emotion representation. The result is **StableFace**, a fine-tuned version of Stable Diffusion specialized in generating realistic facial expressions with high emotional fidelity.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+My objective was to keep the sheer image quality of the base model (`SG161222/Realistic_Vision_V6.0_B1_noVAE`) while adding a dimension it largely lacks: **affective control**.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/stableface_anger.jpg" title="Generated Anger" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/stableface_happy.jpg" title="Generated Happiness" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/stableface_surprise.jpg" title="Generated Surprise" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
+    Generated images demonstrating emotional consistency. The model was fine-tuned on balanced emotion classes (anger, contempt, disgust, fear, happy, neutral, sad, surprise) to ensure specific expressions could be triggered reliably.
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+## Methodology
+
+To guide the generation process, I incorporated a **multi-modal conditioning mechanism**. This involves a lightweight transformer encoder that processes auxiliary signals such as:
+* **Depth maps**
+* **Facial alignment landmarks**
+* **FLAME 3D facial model renderings**
+
+These additional modalities provide structural and geometric constraints to steer the diffusion process more effectively. For supervision, I employed a composite loss function combining **L1 loss**, **LPIPS perceptual loss**, and an **EmoNet-based emotion classification loss**.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/stableface_barplot.jpg" title="Global Accuracy Bar Plot" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/stableface_radar.jpg" title="Emotion Radar Plot" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    Left: Global accuracy (Top-1 and Top-3) comparing the baseline to the fine-tuned model. Right: Radar plot showing per-emotion improvements. The fine-tuned model (green) closes large gaps in anger, disgust, and surprise.
 </div>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+## Results
 
-{% raw %}
+To check whether the fine-tuning step really taught Stable Diffusion to "feel," I generated a balanced test-set of faces and scored them with an off-the-shelf classifier.
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
+* **Accuracy:** Top-1 accuracy improved from 31% to **39%**, and Top-3 accuracy jumped from 62% to **72%**.
+* **Realism (FID):** The Fréchet Inception Distance dropped from 106.027 to **84.367** (lower is better), a 21-point improvement in realism.
+* **Structure (DISTS):** Structural fidelity improved by roughly 2.6%.
+
+In short, a few hours of targeted fine-tuning turned a "good enough" diffusion model into one that can express the full emotional palette with much higher confidence.
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/stableface_grid.jpg" title="Comparison Grid" class="img-fluid rounded z-depth-1" %}
+    </div>
 </div>
-```
+<div class="caption">
+    A grid comparison of labels found by EmoNet on the generated images versus Ground Truth (GT).
+</div>
 
-{% endraw %}
+You can try the model yourself on the [HuggingFace Space](https://huggingface.co/spaces/ValerianFourel/StableFaceEmotion) or access the weights and code below.
+
+* **Code:** [github.com/ValerianFourel/StableFace](https://github.com/ValerianFourel/StableFace)
+* **Weights:** [HuggingFace/RealisticEmotionStableDiffusion](https://huggingface.co/ValerianFourel/RealisticEmotionStableDiffusion)
