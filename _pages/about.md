@@ -19,7 +19,6 @@ announcements:
   scrollable: true
   limit: 5
 
---- >-
 I am a **Machine Learning Engineer** specializing in **Causal AI** and **Large
 Language Models (LLMs)** applied to complex real-world systems. Currently, I
 serve as an **ML Research Associate** at the **University of Hamburg** and a
