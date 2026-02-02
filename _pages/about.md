@@ -8,10 +8,10 @@ profile:
   image: VF.jpg
   image_circular: false
   more_info: >
-    <p>valerian.fourel@gmail.com</p>
-    <p>https://huggingface.co/ValerianFourel</p>
-    <p>https://medium.com/@valerian.fourel</p>
-    <p>https://github.com/ValerianFourel</p>
+    <p><a href="mailto:valerian.fourel@gmail.com">valerian.fourel@gmail.com</a></p>
+    <p><a href="https://huggingface.co/ValerianFourel">HuggingFace</a></p>
+    <p><a href="https://medium.com/@valerian.fourel">Medium</a></p>
+    <p><a href="https://github.com/ValerianFourel">GitHub</a></p>
     <p>Hamburg, Germany</p>
     <p>WhatsApp: +43 660 3977-537</p>
     <p>KakaoTalk: valdecoeur</p>

@@ -35,7 +35,8 @@
                   ></path>
                 </svg>
               {% else %}
-                <a class="news-title" href="{{ item.redirect | relative_url }}">{{ item.title }}</a>
+              
+                {%   <a class="news-title" href="{{ item.redirect | relative_url }}">{{ item.title }}</a>  %}
               {% endif %}
             </td>
           </tr>
@@ -43,6 +44,6 @@
       </table>
     </div>
   {% else %}
-    <p>No posts so far...</p>
+    {%  <p>No posts so far...</p>     %}
   {% endif %}
 </div>

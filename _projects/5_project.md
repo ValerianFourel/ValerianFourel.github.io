@@ -15,4 +15,4 @@ We used Variational Autoencoders (VAE), a generative model, to estimate soil org
 
 **Project Results:** [View Full Report](https://drive.google.com/file/d/1LjitPa5l2pzqLC6_ptD5RvLfWMAZGBOl/view?usp=sharing)
 
-Find the article at: https://medium.com/@valerian.fourel/can-we-use-generative-ai-for-sustainability-a-use-case-106440723494
+<p>Find the article at: <a href="https://medium.com/@valerian.fourel/can-we-use-generative-ai-for-sustainability-a-use-case-106440723494">https://medium.com/@valerian.fourel/can-we-use-generative-ai-for-sustainability-a-use-case-106440723494</a></p>

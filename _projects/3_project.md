@@ -10,7 +10,9 @@ related_publications: false
 
 In this project, I performed a fine-tuning of the **MiniGPT-v2** framework, modifying it to incorporate **LoRA** (Low-Rank Adaptation) for efficient training. Specifically, I used **BERT** as the visual tokenizer and **LLaMA 2–7B** as the language backbone.
 
-Find it at: https://medium.com/@valerian.fourel/minifacegpt-a-vlm-to-label-human-faces-17a281270eb3
+<p>Find the article at: <a href="https://medium.com/@valerian.fourel/minifacegpt-a-vlm-to-label-human-faces-17a281270eb3">https://medium.com/@valerian.fourel/minifacegpt-a-vlm-to-label-human-faces-17a281270eb3</a></p>
+<p>Find the Space at: <a href="https://huggingface.co/spaces/ValerianFourel/miniFaceGPT">https://huggingface.co/spaces/ValerianFourel/miniFaceGPT</a></p>
+<p>Find the code at: <a href="https://github.com/ValerianFourel/MiniGPT-4">https://github.com/ValerianFourel/MiniGPT-4</a></p>
 
 - **Improved Spotting:** After fine-tuning, the model learns to spot the correct label much better than before.
 - **Limitations:** While accuracy improved, it still struggles with complex emotions like _contempt_ and is not yet reliable enough to replace dedicated classifiers like EmoNet.
@@ -20,4 +22,3 @@ A key insight from this work is that performance can improve significantly when 
 You can try the model yourself on the [HuggingFace Space](https://huggingface.co/spaces/ValerianFourel/miniFaceGPT) or access the weights and code below.
 
 - **Weights:** [HuggingFace/FaceVLM](https://huggingface.co/ValerianFourel/FaceVLM)
-- **Code:** [github.com/ValerianFourel/MiniGPT-4](https://github.com/ValerianFourel/MiniGPT-4)

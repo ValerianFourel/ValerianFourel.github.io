@@ -19,3 +19,7 @@ We're working with an open-source dataset from Kaggle for this project, using it
 - Code repository: [GitHub - Market Basket Season Analysis](https://github.com/ValerianFourel/MarketBasketSeasonAnalysis)
 
 Find the project at: https://medium.com/@valerian.fourel/market-basket-analysis-algorithm-change-in-consumer-behaviour-across-seasons-b09da53c35b9
+
+
+<p>Find the article at: <a href="https://medium.com/@valerian.fourel/market-basket-analysis-algorithm-change-in-consumer-behaviour-across-seasons-b09da53c35b9">https://medium.com/@valerian.fourel/market-basket-analysis-algorithm-change-in-consumer-behaviour-across-seasons-b09da53c35b9
+</a></p>
