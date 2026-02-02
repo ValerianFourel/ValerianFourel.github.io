@@ -12,6 +12,7 @@ profile:
     <p><a href="https://huggingface.co/ValerianFourel">HuggingFace</a></p>
     <p><a href="https://medium.com/@valerian.fourel">Medium</a></p>
     <p><a href="https://github.com/ValerianFourel">GitHub</a></p>
+    <p><a href="https://www.linkedin.com/in/valerian-raphael-fourel-b9750417b/">LinkedIn</a></p>
     <p>Hamburg, Germany</p>
     <p>WhatsApp: +43 660 3977-537</p>
     <p>KakaoTalk: valdecoeur</p>
