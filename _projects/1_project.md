@@ -11,6 +11,7 @@ related_publications: false
 **Seoul Doctor Matchmaker** is a sophisticated conversational AI system designed to help foreign residents navigate the complex healthcare landscape of Seoul, South Korea. By bridging the language barrier and analyzing data from over **40,000 medical facilities**, the system provides highly personalized recommendations based on specific medical needs, location, and even subjective preferences like "friendly staff" or "English support."
 
 The system utilizes a **Hybrid Search (BM25 + Vector embeddings)** approach, intelligent routing, and a custom RAG (Retrieval-Augmented Generation) pipeline to process natural language queries in both English and Korean.
+
 <p>Find it at: <a href="https://seouldoc.io">seouldoc.io</a></p>
 
 ## The Problem & Solution
