@@ -9,6 +9,9 @@ profile:
   image_circular: false
   more_info: >
     <p>valerian.fourel@gmail.com</p>
+    <p>https://huggingface.co/ValerianFourel</p>
+    <p>https://medium.com/@valerian.fourel</p>
+    <p>https://github.com/ValerianFourel</p>
     <p>Hamburg, Germany</p>
 selected_papers: true
 social: true
