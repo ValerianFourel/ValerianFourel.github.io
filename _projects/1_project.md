@@ -11,21 +11,8 @@ related_publications: false
 **Seoul Doctor Matchmaker** is a sophisticated conversational AI system designed to help foreign residents navigate the complex healthcare landscape of Seoul, South Korea. By bridging the language barrier and analyzing data from over **40,000 medical facilities**, the system provides highly personalized recommendations based on specific medical needs, location, and even subjective preferences like "friendly staff" or "English support."
 
 The system utilizes a **Hybrid Search (BM25 + Vector embeddings)** approach, intelligent routing, and a custom RAG (Retrieval-Augmented Generation) pipeline to process natural language queries in both English and Korean.
+Find it at: seouldoc.io
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/seoul_chat_interface.jpg" title="Chat Interface" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/seoul_map_view.jpg" title="Location Intelligence" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/seoul_result_card.jpg" title="Facility Result Card" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Left: The conversational interface handling complex queries. Middle: Location-based filtering across Seoul's 25 districts. Right: Detailed facility cards with AI-generated review summaries.
-</div>
 
 ## The Problem & Solution
 
@@ -45,7 +32,7 @@ The backend is built with **FastAPI** and utilizes a Router-Controller architect
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-12 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/seoul_architecture_diagram.jpg" title="System Architecture" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/architectureRAG.jpg" title="System Architecture" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -62,17 +49,7 @@ The core innovation lies in the **Adaptive Precision System**. The engine adjust
 
 To ensure the best results, I implemented a **Dual-Path Ranking** system. **Path A** performs strict filtering (Hard Keywords & Exclusions), while **Path B** runs an additive scoring model to boost results based on soft preferences.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/seoul_rag_pipeline.jpg" title="RAG Pipeline" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/seoul_mobile_view.jpg" title="Mobile Responsiveness" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Visualizing the RAG Pipeline (Left) which balances Factual vs. Mixed queries, and the mobile-responsive design (Right).
-</div>
+
 
 ## The Keyword Engine
 
