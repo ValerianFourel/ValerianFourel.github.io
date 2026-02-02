@@ -1,15 +1,10 @@
-<!-- Metadata, OpenGraph and Schema.org -->
 {% include metadata.liquid %}
 
-<!-- Security: Content Security Policy -->
-<!-- Permissive CSP suitable for academic websites. Allows external images, videos, and common embed services. -->
-<!-- To customize for your needs, see: https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
 <meta
   http-equiv="Content-Security-Policy"
   content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"
 >
 
-<!-- Bootstrap & MDB -->
 <link rel="stylesheet" href="{{ '/assets/css/bootstrap.min.css' | relative_url | bust_file_cache }}">
 <link
   rel="stylesheet"
@@ -19,7 +14,6 @@
 >
 
 {% if page.pretty_table %}
-  <!-- Bootstrap Table -->
   <link
     defer
     rel="stylesheet"
@@ -29,7 +23,6 @@
   >
 {% endif %}
 
-<!-- Fonts & Icons -->
 <link defer rel="stylesheet" href="{{ '/assets/css/academicons.min.css' | relative_url | bust_file_cache }}">
 <link defer rel="stylesheet" href="{{ '/assets/css/scholar-icons.css' | relative_url | bust_file_cache }}">
 <link
@@ -39,7 +32,6 @@
   href="{{ site.third_party_libraries.google_fonts.url.fonts }}"
 >
 
-<!-- Code Syntax Highlighting -->
 <link
   defer
   rel="stylesheet"
@@ -49,14 +41,10 @@
 >
 
 {% if page.toc and page.toc.sidebar %}
-  <!-- Sidebar Table of Contents -->
   <link defer href="{{ '/assets/css/bootstrap-toc.min.css' | relative_url | bust_file_cache }}" rel="stylesheet">
 {% endif %}
 
-<!-- Styles -->
-
 {% if page.pseudocode %}
-  <!-- pseudocode -->
   <link
     defer
     rel="stylesheet"
@@ -66,19 +54,12 @@
   >
 {% endif %}
 
-{% if site.icon.size <= 4 %}
-  <link
-    rel="shortcut icon"
-    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>{{ site.icon }}</text></svg>"
-  >
-{% elsif site.icon != blank %}
-  <link rel="shortcut icon" href="{{ site.icon | prepend: '/assets/img/' | relative_url | bust_file_cache}}">
-{% endif %}
+<link rel="shortcut icon" href="{{ '/assets/img/favicon.ico' | relative_url | bust_file_cache }}">
+
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url | bust_css_cache }}">
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
 
 {% if site.enable_darkmode %}
-  <!-- Dark Mode -->
   <script src="{{ '/assets/js/theme.js' | relative_url | bust_file_cache }}"></script>
   <link
     defer
@@ -93,7 +74,6 @@
 {% endif %}
 
 {% if page.map %}
-  <!-- GeoJSON support via Leaflet -->
   <link
     defer
     rel="stylesheet"
@@ -104,7 +84,6 @@
 {% endif %}
 
 {% if page.code_diff %}
-  <!-- diff2html -->
   <link
     defer
     rel="stylesheet"
@@ -132,7 +111,6 @@
 
 {% if page.images %}
   {% if page.images.compare %}
-    <!-- Image comparison slider -->
     <link
       defer
       rel="stylesheet"
@@ -142,7 +120,6 @@
     >
   {% endif %}
   {% if page.images.lightbox2 %}
-    <!-- Lightbox2 -->
     <link
       defer
       rel="stylesheet"
@@ -152,16 +129,15 @@
     >
   {% endif %}
   {% if page.images.photoswipe %}
-    <!-- Photoswipe -->
     <link
       defer
       rel="stylesheet"
       href="{{ site.third_party_libraries.photoswipe.url.css }}"
+      integrity="{{ site.third_party_libraries.photoswipe.integrity.css }}"
       crossorigin="anonymous"
     >
   {% endif %}
   {% if page.images.slider %}
-    <!-- Image slider -->
     <link
       defer
       rel="stylesheet"
@@ -171,7 +147,6 @@
     >
   {% endif %}
   {% if page.images.spotlight %}
-    <!-- Spotlight -->
     <link
       defer
       rel="stylesheet"
@@ -181,7 +156,6 @@
     >
   {% endif %}
   {% if page.images.venobox %}
-    <!-- Venobox -->
     <link
       defer
       rel="stylesheet"
