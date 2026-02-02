@@ -6,7 +6,7 @@ title: Valerian Fourel # the website title (if blank, full name will be used ins
 first_name: Valerian
 middle_name: R.
 last_name: Fourel
-# contact_note: > 
+# contact_note: >
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >
