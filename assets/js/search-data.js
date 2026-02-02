@@ -400,19 +400,19 @@ ninja.data = [{
             window.location.href = "/blog/2015/formatting-and-links/";
           
         },
-      },{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
+      },{id: "projects-seoul-doctor-matchmaker",
+          title: 'Seoul Doctor Matchmaker',
+          description: "AI-Powered Medical Facility Search for Seoul using Hybrid RAG",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
+            },},{id: "projects-stableface",
+          title: 'StableFace',
+          description: "A Stable Diffusion Model for Faces with Guidance on Emotions",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
+            },},{id: "projects-minifacegpt",
+          title: 'MiniFaceGPT',
+          description: "A VLM to Label Human Faces?",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
             },},{id: "projects-project-4",
