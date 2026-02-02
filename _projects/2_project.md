@@ -66,8 +66,3 @@ In short, a few hours of targeted fine-tuning turned a "good enough" diffusion m
 <div class="caption">
     A grid comparison of labels found by EmoNet on the generated images versus Ground Truth (GT).
 </div>
-
-You can try the model yourself on the [HuggingFace Space](https://huggingface.co/spaces/ValerianFourel/StableFaceEmotion) or access the weights and code below.
-
-* **Code:** [github.com/ValerianFourel/StableFace](https://github.com/ValerianFourel/StableFace)
-* **Weights:** [HuggingFace/RealisticEmotionStableDiffusion](https://huggingface.co/ValerianFourel/RealisticEmotionStableDiffusion)
