@@ -13,7 +13,6 @@ related_publications: false
 The system utilizes a **Hybrid Search (BM25 + Vector embeddings)** approach, intelligent routing, and a custom RAG (Retrieval-Augmented Generation) pipeline to process natural language queries in both English and Korean.
 Find it at: seouldoc.io
 
-
 ## The Problem & Solution
 
 Foreign residents in Seoul face significant challenges: a language barrier, information overload (40k+ clinics), and difficulty finding facilities that match specific preferences like insurance acceptance or parking availability.
@@ -48,8 +47,6 @@ The core innovation lies in the **Adaptive Precision System**. The engine adjust
 3.  **Low Precision (<30%):** Distance-first ranking. Used for "nearest doctor" queries.
 
 To ensure the best results, I implemented a **Dual-Path Ranking** system. **Path A** performs strict filtering (Hard Keywords & Exclusions), while **Path B** runs an additive scoring model to boost results based on soft preferences.
-
-
 
 ## The Keyword Engine
 

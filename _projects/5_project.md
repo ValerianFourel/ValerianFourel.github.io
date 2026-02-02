@@ -13,8 +13,6 @@ Does Generative AI have potential in the realm of sustainability? A key issue of
 
 We used Variational Autoencoders (VAE), a generative model, to estimate soil organic carbon content — an essential factor in assessing soil health and promoting sustainable agricultural practices. The VAE model excels in processing and synthesizing complex data, enabling it to capture the intricate relationships within satellite imagery and other geospatial data types.
 
-
 **Project Results:** [View Full Report](https://drive.google.com/file/d/1LjitPa5l2pzqLC6_ptD5RvLfWMAZGBOl/view?usp=sharing)
 
 Find the article at: https://medium.com/@valerian.fourel/can-we-use-generative-ai-for-sustainability-a-use-case-106440723494
-
