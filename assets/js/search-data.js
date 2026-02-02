@@ -453,13 +453,6 @@ ninja.data = [{
           window.open("mailto:%76%61%6C%65%72%69%61%6E.%66%6F%75%72%65%6C@%67%6D%61%69%6C.%63%6F%6D", "_blank");
         },
       },{
-        id: 'social-whatsapp',
-        title: 'whatsapp',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://wa.me/+43 660 3977-537", "_blank");
-        },
-      },{
       id: 'light-theme',
       title: 'Change theme to light',
       description: 'Change the theme of the site to Light',
