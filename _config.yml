@@ -157,7 +157,6 @@ newsletter:
 collections:
   books:
     output: true
-    output: true
   projects:
     output: true
   teachings:
