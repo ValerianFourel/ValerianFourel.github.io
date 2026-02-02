@@ -13,6 +13,8 @@ profile:
     <p>https://medium.com/@valerian.fourel</p>
     <p>https://github.com/ValerianFourel</p>
     <p>Hamburg, Germany</p>
+    <p>WhatsApp: +43 660 3977-537</p>
+    <p>KakaoTalk: valdecoeur</p>
 selected_papers: true
 social: true
 announcements:
