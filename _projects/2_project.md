@@ -30,9 +30,10 @@ My objective was to keep the sheer image quality of the base model (`SG161222/Re
 ## Methodology
 
 To guide the generation process, I incorporated a **multi-modal conditioning mechanism**. This involves a lightweight transformer encoder that processes auxiliary signals such as:
-* **Depth maps**
-* **Facial alignment landmarks**
-* **FLAME 3D facial model renderings**
+
+- **Depth maps**
+- **Facial alignment landmarks**
+- **FLAME 3D facial model renderings**
 
 These additional modalities provide structural and geometric constraints to steer the diffusion process more effectively. For supervision, I employed a composite loss function combining **L1 loss**, **LPIPS perceptual loss**, and an **EmoNet-based emotion classification loss**.
 
@@ -52,9 +53,9 @@ These additional modalities provide structural and geometric constraints to stee
 
 To check whether the fine-tuning step really taught Stable Diffusion to "feel," I generated a balanced test-set of faces and scored them with an off-the-shelf classifier.
 
-* **Accuracy:** Top-1 accuracy improved from 31% to **39%**, and Top-3 accuracy jumped from 62% to **72%**.
-* **Realism (FID):** The Fréchet Inception Distance dropped from 106.027 to **84.367** (lower is better), a 21-point improvement in realism.
-* **Structure (DISTS):** Structural fidelity improved by roughly 2.6%.
+- **Accuracy:** Top-1 accuracy improved from 31% to **39%**, and Top-3 accuracy jumped from 62% to **72%**.
+- **Realism (FID):** The Fréchet Inception Distance dropped from 106.027 to **84.367** (lower is better), a 21-point improvement in realism.
+- **Structure (DISTS):** Structural fidelity improved by roughly 2.6%.
 
 In short, a few hours of targeted fine-tuning turned a "good enough" diffusion model into one that can express the full emotional palette with much higher confidence.
 

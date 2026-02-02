@@ -32,9 +32,10 @@ The system utilizes a **Hybrid Search (BM25 + Vector embeddings)** approach, int
 Foreign residents in Seoul face significant challenges: a language barrier, information overload (40k+ clinics), and difficulty finding facilities that match specific preferences like insurance acceptance or parking availability.
 
 This project solves this via an AI agent that:
-* **Understands Intent:** Detects 9 distinct conversation intents (e.g., `PROVIDE_INFO`, `EMERGENCY`, `CHANGE_CRITERIA`).
-* **Hybrid Search:** Combines **BM25** (keyword precision) and **Vector Search** (semantic understanding) using a dynamic alpha routing strategy.
-* **Extracts Entities:** Identifies hard constraints (Must-haves) vs. soft preferences (Nice-to-haves) using LLM-based extraction.
+
+- **Understands Intent:** Detects 9 distinct conversation intents (e.g., `PROVIDE_INFO`, `EMERGENCY`, `CHANGE_CRITERIA`).
+- **Hybrid Search:** Combines **BM25** (keyword precision) and **Vector Search** (semantic understanding) using a dynamic alpha routing strategy.
+- **Extracts Entities:** Identifies hard constraints (Must-haves) vs. soft preferences (Nice-to-haves) using LLM-based extraction.
 
 ---
 
@@ -77,14 +78,15 @@ To ensure the best results, I implemented a **Dual-Path Ranking** system. **Path
 
 A unique feature of this project is the classification of keywords into four distinct categories to fine-tune the ranking algorithm:
 
-* **Hard Keywords (+2000 boost):** Must-have features (e.g., `parking`, `MRI`, `weekend hours`).
-* **Soft Keywords (+500 boost):** Subjective preferences (e.g., `friendly`, `modern`, `experienced`).
-* **Negative Keywords (-1500 penalty):** Things to avoid (e.g., `crowded`, `rushed`).
-* **Negative Hard Keywords (-5000 penalty):** Strict exclusions (e.g., `no parking`).
+- **Hard Keywords (+2000 boost):** Must-have features (e.g., `parking`, `MRI`, `weekend hours`).
+- **Soft Keywords (+500 boost):** Subjective preferences (e.g., `friendly`, `modern`, `experienced`).
+- **Negative Keywords (-1500 penalty):** Things to avoid (e.g., `crowded`, `rushed`).
+- **Negative Hard Keywords (-5000 penalty):** Strict exclusions (e.g., `no parking`).
 
 Here is a snippet of the **Router Prompt** logic used to classify user intent before search execution:
 
 {% raw %}
+
 ```python
 ROUTER_PROMPT = """
 Classify user intent based on:
@@ -100,3 +102,4 @@ Return JSON:
 }
 """
 {% endraw %}
+```

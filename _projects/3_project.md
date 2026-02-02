@@ -46,12 +46,12 @@ To create a rich training signal, each image was paired with a detailed string-b
 
 To evaluate the model, we used a secondary model (**e5-small-v2**) to embed the generated descriptions against the original ground truths and computed the cosine similarity.
 
-* **Improved Spotting:** After fine-tuning, the model learns to spot the correct label much better than before.
-* **Limitations:** While accuracy improved, it still struggles with complex emotions like *contempt* and is not yet reliable enough to replace dedicated classifiers like EmoNet.
+- **Improved Spotting:** After fine-tuning, the model learns to spot the correct label much better than before.
+- **Limitations:** While accuracy improved, it still struggles with complex emotions like _contempt_ and is not yet reliable enough to replace dedicated classifiers like EmoNet.
 
 A key insight from this work is that performance can improve significantly when Vision-Language Models (VLMs) are trained on a well-defined data manifold. However, unlocking true reliability often requires **agentic capabilities**—where the model can choose the right tool for the task—rather than just scaling laws alone.
 
 You can try the model yourself on the [HuggingFace Space](https://huggingface.co/spaces/ValerianFourel/miniFaceGPT) or access the weights and code below.
 
-* **Weights:** [HuggingFace/FaceVLM](https://huggingface.co/ValerianFourel/FaceVLM)
-* **Code:** [github.com/ValerianFourel/MiniGPT-4](https://github.com/ValerianFourel/MiniGPT-4)
+- **Weights:** [HuggingFace/FaceVLM](https://huggingface.co/ValerianFourel/FaceVLM)
+- **Code:** [github.com/ValerianFourel/MiniGPT-4](https://github.com/ValerianFourel/MiniGPT-4)
