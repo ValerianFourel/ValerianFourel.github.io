@@ -2,7 +2,7 @@
 layout: page
 title: Generative AI for Sustainability
 description: Using VAEs fitted on satellite data for soil carbon content estimation
-img: /assets/img/vae-sustainability-hero.jpg
+img: /assets/img/GenAIRemoteSensing.webp
 importance: 1
 category: sustainability
 ---
