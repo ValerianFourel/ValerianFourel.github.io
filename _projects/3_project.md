@@ -2,7 +2,7 @@
 layout: page
 title: MiniFaceGPT
 description: A VLM to Label Human Faces?
-img: assets/img/minifacegpt_cover.jpg
+img: assets/img/miniFaceGPT.webp
 importance: 2
 category: work
 related_publications: false

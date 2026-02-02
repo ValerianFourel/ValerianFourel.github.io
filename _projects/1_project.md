@@ -2,7 +2,7 @@
 layout: page
 title: Seoul Doctor Matchmaker
 description: AI-Powered Medical Facility Search for Seoul using Hybrid RAG
-img: assets/img/seoul_doc_header.jpg
+img: assets/img/SeoulDoc.jpg
 importance: 1
 category: work
 related_publications: false

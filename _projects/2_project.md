@@ -2,7 +2,7 @@
 layout: page
 title: StableFace
 description: A Stable Diffusion Model for Faces with Guidance on Emotions
-img: assets/img/stableface_cover.jpg
+img: assets/img/StableFace.webp
 importance: 1
 category: work
 related_publications: false
