@@ -26,13 +26,14 @@ layout: default
         {% else %}
           href="{{ page.cv_pdf | relative_url }}"
         {% endif %}
-        class="vf-button vf-button-primary vf-cv-download"
-        download="ValerianFOUREL_MLEngineer.pdf"
-        aria-label="Download Valerian Fourel's CV as a PDF"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="vf-text-link vf-cv-link"
+        aria-label="Open Valerian Fourel's CV as a PDF in a new tab"
       >
-        <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i>
-        Download CV PDF
-        <span aria-hidden="true">↓</span>
+        <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
+        Open CV PDF
+        <span aria-hidden="true">↗</span>
       </a>
     {% endif %}
   </header>

@@ -16,7 +16,7 @@ description: Machine Learning Engineer building reliable LLM, RAG, agentic AI, a
       </p>
       <div class="vf-actions" aria-label="Primary links">
         <a class="vf-button vf-button-primary" href="{{ '/projects/' | relative_url }}">Explore selected work <span aria-hidden="true">→</span></a>
-        <a class="vf-button vf-button-secondary" href="{{ '/assets/pdf/ValerianFOUREL_MLEngineer.pdf' | relative_url }}" download="ValerianFOUREL_MLEngineer.pdf">Download CV <span aria-hidden="true">↓</span></a>
+        <a class="vf-text-link vf-cv-link" href="{{ '/assets/pdf/ValerianFOUREL_MLEngineer.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">View CV <span aria-hidden="true">↗</span></a>
       </div>
       <div class="vf-affiliations">
         <span>Currently at</span>
