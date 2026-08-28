@@ -60,7 +60,7 @@ ninja.data = [{
         title: 'CV',
         section: 'Socials',
         handler: () => {
-          window.open("/assets/pdf/Valerian-Fourel-CV.pdf", "_blank");
+          window.open("/assets/pdf/ValerianFOUREL_MLEngineer.pdf", "_blank");
         },
       },{
         id: 'social-email',
