@@ -4,96 +4,93 @@ cv:
   email: valerian.fourel@gmail.com
   location: Hamburg, Germany
   image: ""
-  # Added quotes here because of brackets and colons
-  summary: "ML Engineer specializing in Causal AI and LLMs applied to complex real-world systems, from remote sensing to 3D vision modeling. I combine diverse technical expertise with cross-cultural communication skills to deliver scalable, global solutions."
+  summary: "Machine Learning Engineer specializing in LLMs, RAG, agentic AI, and production ML systems, with experience taking AI solutions from research to deployment."
 
   social_networks:
     - network: GitHub
-      username: valerianfourel
+      username: ValerianFourel
     - network: LinkedIn
-      username: valerianfourel
+      username: valerian-raphael-fourel-b9750417b
     - network: Medium
-      username: valerianfourel
+      username: valerian.fourel
     - network: Hugging Face
-      username: valerianfourel
+      username: ValerianFourel
 
   address:
     city: Hamburg
     countryCode: DE
 
   sections:
+    Experience:
+      - company: University of Hamburg / Economic AI GmbH
+        position: Machine Learning Engineer
+        location: "Hamburg, Germany"
+        start_date: 2025-08-01
+        end_date: Present
+        highlights:
+          - "Engineered a scalable pipeline that generated and screened 100K+ candidate prompts, with versioned schemas, LLM-as-a-judge annotations, provider abstractions, caching, validation, and failure-safe logging."
+          - "Developed LLM post-training and distillation workflows using supervision from 70B+ models, benchmarking capability retention and inference efficiency."
+          - "Developed and optimized 50K+ causal machine learning workflows using PySpark and SQL on AWS Databricks, reducing runtime by 4x and supporting 8+ engineers."
+
+      - company: Max Planck Institute for Intelligent Systems
+        position: Research Assistant
+        location: "Tübingen, Germany"
+        start_date: 2023-08-01
+        end_date: 2025-08-01
+        highlights:
+          - "Engineered multimodal data and embedding pipelines across 50,000+ motion sequences, processing textual, visual, and 3D representations with Python and PyTorch."
+          - "Fine-tuned generative and multimodal foundation models across 500K images and 8 emotion categories, improving task accuracy by 25% through perceptual-loss optimization."
+          - "Containerized research workflows with Docker, reducing simulation and environment-sharing time by 90% for 10+ researchers."
+
+      - company: Soil Science Lab - University of Tübingen
+        position: Data Science Intern
+        location: "Tübingen, Germany"
+        start_date: 2023-01-01
+        end_date: 2023-08-01
+        highlights:
+          - "Built a JAX-based data pipeline to preprocess geospatial data and validate feature extraction across predictive modeling tasks."
+          - "Analyzed 16K soil samples across Bavaria using geospatial and environmental data."
+          - "Co-authored a 2026 Geoderma publication on compact CNN-Transformer models for spatially robust soil organic carbon mapping."
+
+    Projects:
+      - name: SeoulDoc
+        date: "2026 - Present"
+        location: Seoul, Korea
+        summary: "Creator and AI Engineer"
+        highlights:
+          - "Designed and deployed an end-to-end RAG and agentic search application covering 8,484 healthcare facilities and 1.25M review embeddings."
+          - "Built tool-calling agent workflows integrating structured data, vector retrieval, ranking, and LLM APIs."
+          - "Implemented evaluation, safety constraints, and deployment workflows for a high-stakes medical-information domain."
+
     Education:
       - institution: Eberhard Karls University Tübingen
         location: "Tübingen, Germany"
         area: "Quantitative Data Science - Machine Learning Specialization"
-        studyType: "MSc."
-        courses: "Deep Learning, Causal Machine Learning, Time Series Analysis, Psychometrics"
+        studyType: MSc
 
       - institution: McGill University
         location: "Montreal, Canada"
         area: "Computer Science and Economics"
-        studyType: "BA."
-        courses: "Data Structures & Algorithms, Intelligent Robotics, Databases, Industrial Organizations"
-
-    Experience:
-      - company: University of Hamburg
-        position: "Machine Learning Research Associate"
-        location: "Hamburg, Germany"
-        start_date: 2025-08-01
-        end_date: "Present"
-        highlights:
-          - "Modeled text data mixtures as causal treatment effects using PySpark to process 10,000+ documents, optimizing training corpora for distinct LLM architectures."
-          - "Executed experimental fine-tuning designs on 8+ SLM variants in PyTorch, validating architectural choices that improved reliability of 1.7B+ parameter models."
-          - "Synthesized complex Causal ML research into actionable documentation for lab stakeholders."
-
-      - company: Economic AI GmbH
-        position: "Software Engineer (Contract)"
-        location: "Hamburg, Germany"
-        start_date: 2025-08-01
-        end_date: "Present"
-        highlights:
-          - "Implemented PySpark features on Databricks for a causal ML codebase, reducing runtime by 4x for 50K+ data pipelines."
-          - "Delivered 12+ presentations translating complex Causal ML concepts into accessible insights for business alignment."
-          - "Implemented 150+ rigorous unit tests and authored in-depth API guides to ensure production-grade reliability."
-
-      - company: Max Planck Institute for Intelligent Systems
-        position: "Research Assistant"
-        location: "Tübingen, Germany"
-        start_date: 2023-08-01
-        end_date: "2025-08-01"
-        highlights:
-          - "Engineered data processing and embedding workflows for textual/visual data across 50,000+ motion sequences using PyTorch."
-          - "Standardized Docker containers for ML model deployment, reducing deployment time by 90% and increasing scalability for 3D human modeling research."
-          - "Researched Few-Shot Learning on Visual LLMs for emotion detection, achieving a 20% increase in accuracy using 500K facial images."
-
-      - company: Soil Science Lab - University of Tübingen
-        position: "Data Science Intern"
-        location: "Tübingen, Germany"
-        start_date: 2023-01-01
-        end_date: "2023-08-01"
-        highlights:
-          - "Built PyTorch neural networks to predict soil metrics using time-series geospatial data, achieving RMSE below 0.05."
-          - "Engineered a Python ETL pipeline for a 10 million-point satellite dataset, applying Explainable AI for feature validation."
-          - "Designed regression-based experimental frameworks using SQL and Matplotlib/Seaborn to generate environmental insights."
+        studyType: BA
 
     Skills:
-      - name: Programming & Tools
-        level: Expert
-        keywords: "Python, PyTorch, PySpark, SQL, Docker, CI/CD, Unit Testing, Azure, Databricks"
       - name: Machine Learning
         level: Expert
-        keywords: "Causal Inference, LLMs, Visual Large Language Models, Few-Shot Learning, Time Series Analysis, Explainable AI"
+        keywords: "LLM Post-Training & Evaluation, RAG, Agentic AI, Tool Calling, Causal Machine Learning, Multimodal Learning"
+      - name: Engineering
+        level: Expert
+        keywords: "Python, PyTorch, JAX, PySpark, SQL, Docker, CI/CD, Databricks, AWS"
 
     Languages:
       - name: French
-        summary: "C2 (Native/Bilingual)"
+        summary: Native speaker
       - name: English
-        summary: "C2 (Native/Bilingual)"
+        summary: C2
       - name: German
-        summary: "B2 (Upper Intermediate)"
+        summary: C1
       - name: Korean
-        summary: "A2 (Elementary)"
+        summary: A2
 
     Interests:
       - name: Personal
-        keywords: "Music (1950s to 1980s), Strategic Board Games, Functional Training"
+        keywords: "Equities & Technology Investing, Music (1950s to 1980s), Board Games, Functional Training, Learning Korean"

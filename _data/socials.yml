@@ -1,3 +1,9 @@
----
-cv_pdf: /assets/pdf/ValerianFourelResume_Feb1st2026.pdf
+cv_pdf: /assets/pdf/Valerian-Fourel-CV.pdf
 email: valerian.fourel@gmail.com
+github_username: ValerianFourel
+linkedin_username: valerian-raphael-fourel-b9750417b
+
+hugging_face:
+  logo: https://huggingface.co/front/assets/huggingface_logo-noborder.svg
+  title: Hugging Face
+  url: https://huggingface.co/ValerianFourel

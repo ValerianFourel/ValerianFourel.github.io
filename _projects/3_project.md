@@ -1,24 +1,25 @@
 ---
 layout: page
 title: MiniFaceGPT
-description: A VLM to Label Human Faces?
-img: assets/img/miniFaceGPT.webp
-importance: 2
+description: A compact vision-language model adapted for facial-emotion understanding.
+img: /assets/img/miniFaceGPT.webp
+image_alt: MiniFaceGPT vision-language model interface
+importance: 3
 category: work
+focus: Multimodal learning
+year: 2025
+tags: [VLM, LoRA, LLaMA 2, BERT]
+huggingface: https://huggingface.co/spaces/ValerianFourel/miniFaceGPT
+github: https://github.com/ValerianFourel/MiniGPT-4
 related_publications: false
 ---
 
-In this project, I performed a fine-tuning of the **MiniGPT-v2** framework, modifying it to incorporate **LoRA** (Low-Rank Adaptation) for efficient training. Specifically, I used **BERT** as the visual tokenizer and **LLaMA 2–7B** as the language backbone.
+## Can a compact VLM reason about facial affect?
 
-<p>Find the article at: <a href="https://medium.com/@valerian.fourel/minifacegpt-a-vlm-to-label-human-faces-17a281270eb3">https://medium.com/@valerian.fourel/minifacegpt-a-vlm-to-label-human-faces-17a281270eb3</a></p>
-<p>Find the Space at: <a href="https://huggingface.co/spaces/ValerianFourel/miniFaceGPT">https://huggingface.co/spaces/ValerianFourel/miniFaceGPT</a></p>
-<p>Find the code at: <a href="https://github.com/ValerianFourel/MiniGPT-4">https://github.com/ValerianFourel/MiniGPT-4</a></p>
+MiniFaceGPT adapts the MiniGPT-v2 framework for facial-emotion understanding. I introduced LoRA-based fine-tuning, using BERT-derived visual representations with a LLaMA 2–7B language backbone.
 
-- **Improved Spotting:** After fine-tuning, the model learns to spot the correct label much better than before.
-- **Limitations:** While accuracy improved, it still struggles with complex emotions like _contempt_ and is not yet reliable enough to replace dedicated classifiers like EmoNet.
+The model became more consistent at assigning common emotion labels after fine-tuning, while harder categories such as contempt remained challenging. That limitation is useful: a general vision-language model can improve on a narrow manifold, but it does not automatically become a reliable specialist.
 
-A key insight from this work is that performance can improve significantly when Vision-Language Models (VLMs) are trained on a well-defined data manifold. However, unlocking true reliability often requires **agentic capabilities**—where the model can choose the right tool for the task—rather than just scaling laws alone.
+The project reinforced a principle that now informs my agentic work: reliability often comes from letting a system select the right specialized tool, not simply scaling one model.
 
-You can try the model yourself on the [HuggingFace Space](https://huggingface.co/spaces/ValerianFourel/miniFaceGPT) or access the weights and code below.
-
-- **Weights:** [HuggingFace/FaceVLM](https://huggingface.co/ValerianFourel/FaceVLM)
+**Explore:** [Try the Hugging Face Space](https://huggingface.co/spaces/ValerianFourel/miniFaceGPT) · [Download the weights](https://huggingface.co/ValerianFourel/FaceVLM) · [View the code](https://github.com/ValerianFourel/MiniGPT-4) · [Read the project article](https://medium.com/@valerian.fourel/minifacegpt-a-vlm-to-label-human-faces-17a281270eb3)

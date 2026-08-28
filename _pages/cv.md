@@ -3,8 +3,9 @@ layout: cv
 permalink: /cv/
 title: CV
 nav: true
-nav_order: 5
-cv_pdf: /assets/pdf/ValerianFourelResume_Feb1st2026.pdf # you can also use external links here
+nav_order: 4
+description: Experience across LLM systems, research engineering, causal ML, and applied AI products.
+cv_pdf: /assets/pdf/Valerian-Fourel-CV.pdf
 cv_format: rendercv # options: rendercv, jsonresume
 toc:
   sidebar: left

@@ -1,24 +1,22 @@
 ---
 layout: page
-title: Market Basket Analysis
-description: Analyzing seasonal changes in consumer behavior using the Apriori algorithm
+title: Market Basket Seasonality
+description: Association-rule analysis of how grocery purchasing patterns change by season.
 img: /assets/img/Basket.webp
-importance: 1
+image_alt: Market basket analysis visualization
+importance: 5
 category: data science
+focus: Applied data science
+year: 2024
+tags: [Apriori, Association rules, Python, Analytics]
+github: https://github.com/ValerianFourel/MarketBasketSeasonAnalysis
+related_publications: false
 ---
 
-## Market Basket Analysis Algorithm: Change in Consumer Behaviour across Seasons
+## Finding seasonal structure in transaction data
 
-We're diving into the world of Market Basket Analysis (MBA) using the Apriori algorithm. Our goal? To understand how shopping habits change with the seasons. The Apriori algorithm helps us spot patterns in large sets of data, making it perfect for this job. We want to see how the shopping habits shift during the seasons.
+This project applies the Apriori algorithm to grocery transactions to examine how product associations shift across seasons. The goal was to move beyond one global set of “frequently bought together” rules and ask whether those relationships remain stable over time.
 
-We're working with an open-source dataset from Kaggle for this project, using it to explore Market Basket Analysis. This method helps spots trends in popular purchases, which can guide business strategies. We'll be using the apriori algorithm to see how seasons influence what groceries people buy. But first, we need to clean up the data.
+The workflow covers data cleaning, frequent-itemset generation, association-rule filtering, and comparison of support, confidence, and lift across seasonal subsets.
 
-**Resources:**
-
-- Original dataset: [Kaggle Dataset](https://www.kaggle.com/)
-- Code repository: [GitHub - Market Basket Season Analysis](https://github.com/ValerianFourel/MarketBasketSeasonAnalysis)
-
-Find the project at: https://medium.com/@valerian.fourel/market-basket-analysis-algorithm-change-in-consumer-behaviour-across-seasons-b09da53c35b9
-
-<p>Find the article at: <a href="https://medium.com/@valerian.fourel/market-basket-analysis-algorithm-change-in-consumer-behaviour-across-seasons-b09da53c35b9">https://medium.com/@valerian.fourel/market-basket-analysis-algorithm-change-in-consumer-behaviour-across-seasons-b09da53c35b9
-</a></p>
+**Explore:** [View the code](https://github.com/ValerianFourel/MarketBasketSeasonAnalysis) · [Read the project article](https://medium.com/@valerian.fourel/market-basket-analysis-algorithm-change-in-consumer-behaviour-across-seasons-b09da53c35b9)

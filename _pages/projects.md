@@ -1,8 +1,8 @@
 ---
 layout: page
-title: projects
+title: work
 permalink: /projects/
-description: Projects, across HuggingFace, GitHub, etc.
+description: Deployed AI products, research systems, and focused experiments across retrieval, generative models, and applied machine learning.
 nav: true
 nav_order: 3
 horizontal: false
@@ -22,7 +22,7 @@ horizontal: false
     </div>
   </div>
   {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
     {% for project in sorted_projects %}
       {% include projects.liquid %}
     {% endfor %}
