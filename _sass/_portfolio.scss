@@ -309,15 +309,16 @@ html[data-theme="dark"] .vf-button.vf-button-primary {
   border-radius: 50%;
   outline: 1px solid var(--vf-rule);
   box-shadow: var(--vf-shadow);
+  transform: translateY(-3.5rem);
 
   > img {
     position: absolute;
-    top: -4%;
+    top: 0;
     left: 50%;
     display: block;
     width: auto;
     max-width: none;
-    height: 205%;
+    height: 185%;
     filter: saturate(0.82) contrast(1.04);
     transform: translateX(-46.2%);
   }
@@ -1029,6 +1030,7 @@ footer.sticky-bottom {
   .vf-portrait {
     width: 200px;
     justify-self: start;
+    transform: none;
   }
 
   .vf-section-heading-row {
