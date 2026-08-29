@@ -28,12 +28,6 @@ description: Machine Learning Engineer building reliable LLM, RAG, agentic AI, a
 
     <figure class="vf-portrait">
       <img src="{{ '/assets/img/VF.jpg' | relative_url }}" alt="Portrait of Valerian Fourel" width="1200" height="800" loading="eager">
-      <div class="vf-signal-rail" aria-hidden="true">
-        <span><i></i>Research</span>
-        <span><i></i>Evaluate</span>
-        <span><i></i>Deploy</span>
-      </div>
-      <figcaption>Valerian Fourel <span>ML Engineer</span></figcaption>
     </figure>
 
   </section>
@@ -47,9 +41,9 @@ description: Machine Learning Engineer building reliable LLM, RAG, agentic AI, a
 
   <section class="vf-section vf-capabilities" aria-labelledby="capabilities-title">
     <header class="vf-section-heading">
-      <p class="vf-eyebrow">Focus areas</p>
-      <h2 id="capabilities-title">Rigour at every layer of the ML system.</h2>
-      <p>I work where modeling, evaluation, and software engineering meet—especially when reliability matters more than a polished demo.</p>
+      <p class="vf-eyebrow">End-to-end ownership</p>
+      <h2 id="capabilities-title">I own the LLM pipeline from first dataset to production.</h2>
+      <p>I design and run the full system: prompt-data generation, model selection and post-training, retrieval and tool use, evaluation, failure analysis, observability, and deployment.</p>
     </header>
 
     <div class="vf-capability-list">
@@ -79,7 +73,7 @@ description: Machine Learning Engineer building reliable LLM, RAG, agentic AI, a
     <header class="vf-section-heading vf-section-heading-row">
       <div>
         <p class="vf-eyebrow">Selected work</p>
-        <h2 id="featured-title">Evidence, not adjectives.</h2>
+        <h2 id="featured-title">Key projects</h2>
       </div>
       <a class="vf-text-link" href="{{ '/projects/' | relative_url }}">View all projects <span aria-hidden="true">→</span></a>
     </header>

@@ -156,9 +156,9 @@ body > .container[role="main"] {
 .vf-hero {
   position: relative;
   display: grid;
-  min-height: 670px;
-  grid-template-columns: minmax(0, 1.07fr) minmax(390px, 0.93fr);
-  gap: clamp(3rem, 7vw, 7rem);
+  min-height: 620px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: clamp(2.5rem, 6vw, 6rem);
   align-items: center;
   padding: clamp(4.5rem, 9vw, 7.5rem) 0 clamp(5rem, 10vw, 8rem);
 
@@ -300,77 +300,25 @@ html[data-theme="dark"] .vf-button.vf-button-primary {
 
 .vf-portrait {
   position: relative;
+  width: clamp(180px, 19vw, 240px);
+  aspect-ratio: 1;
+  overflow: hidden;
+  justify-self: end;
   margin: 0;
+  border: 6px solid var(--vf-surface);
+  border-radius: 50%;
+  outline: 1px solid var(--vf-rule);
   box-shadow: var(--vf-shadow);
-
-  &::before {
-    position: absolute;
-    z-index: 2;
-    inset: 0;
-    background: linear-gradient(180deg, transparent 48%, rgba(4, 17, 23, 0.82) 100%);
-    content: "";
-    pointer-events: none;
-  }
 
   > img {
     display: block;
     width: 100%;
-    aspect-ratio: 0.88;
+    height: 100%;
     object-fit: cover;
-    object-position: 50% 50%;
+    object-position: center;
     filter: saturate(0.82) contrast(1.04);
-  }
-
-  figcaption {
-    position: absolute;
-    z-index: 3;
-    right: 1.4rem;
-    bottom: 1.25rem;
-    left: 1.4rem;
-    display: flex;
-    justify-content: space-between;
-    color: #fff;
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 0.7rem;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-
-    span {
-      color: rgba(255, 255, 255, 0.68);
-    }
-  }
-}
-
-.vf-signal-rail {
-  position: absolute;
-  z-index: 3;
-  top: 1.3rem;
-  right: 1.3rem;
-  display: grid;
-  min-height: 160px;
-  align-content: space-between;
-  padding-left: 1.15rem;
-  border-left: 1px solid rgba(255, 255, 255, 0.58);
-
-  span {
-    position: relative;
-    color: rgba(255, 255, 255, 0.88);
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 0.62rem;
-    letter-spacing: 0.07em;
-    text-transform: uppercase;
-  }
-
-  i {
-    position: absolute;
-    top: 50%;
-    left: calc(-1.15rem - 4px);
-    width: 7px;
-    height: 7px;
-    border: 1px solid #fff;
-    border-radius: 50%;
-    background: var(--vf-copper);
-    transform: translateY(-50%);
+    transform: scale(1.38);
+    transform-origin: 50% 34%;
   }
 }
 
@@ -997,7 +945,7 @@ footer.sticky-bottom {
 @media (max-width: 991px) {
   .vf-hero {
     min-height: 0;
-    grid-template-columns: 1fr 0.78fr;
+    grid-template-columns: 1fr auto;
     gap: 2.5rem;
 
     &::before {
@@ -1007,10 +955,6 @@ footer.sticky-bottom {
 
   .vf-hero-copy h1 {
     font-size: clamp(3rem, 7vw, 4.7rem);
-  }
-
-  .vf-portrait > img {
-    aspect-ratio: 0.8;
   }
 
   .vf-proof {
@@ -1082,12 +1026,8 @@ footer.sticky-bottom {
   }
 
   .vf-portrait {
-    max-width: 520px;
-  }
-
-  .vf-portrait > img {
-    aspect-ratio: 1.12;
-    object-position: 50% 43%;
+    width: 180px;
+    justify-self: start;
   }
 
   .vf-section-heading-row {
