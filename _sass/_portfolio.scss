@@ -300,16 +300,16 @@ html[data-theme="dark"] .vf-button.vf-button-primary {
 
 .vf-portrait {
   position: relative;
-  width: clamp(210px, 22vw, 280px);
+  width: clamp(260px, 27vw, 340px);
   aspect-ratio: 1;
   overflow: hidden;
+  align-self: start;
   justify-self: end;
-  margin: 0;
+  margin: -2rem 0 0;
   border: 6px solid var(--vf-surface);
   border-radius: 50%;
   outline: 1px solid var(--vf-rule);
   box-shadow: var(--vf-shadow);
-  transform: translateY(-3.5rem);
 
   > img {
     position: absolute;
@@ -1028,9 +1028,9 @@ footer.sticky-bottom {
   }
 
   .vf-portrait {
-    width: 200px;
+    width: 240px;
     justify-self: start;
-    transform: none;
+    margin-top: 1.5rem;
   }
 
   .vf-section-heading-row {
